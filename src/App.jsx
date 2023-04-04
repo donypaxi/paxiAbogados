@@ -1,4 +1,5 @@
 import paxiPortada from './img/portada.png'
+import fondo1 from './img/fondo1.jpg'
 
 
 export const App = () => {
@@ -37,6 +38,15 @@ export const App = () => {
           </svg>
         </div>
       </div>
+
+      <div className='relative'>
+        <img className='opacity-95'  src={fondo1} alt="" />
+        <div className='text-sm w-24 absolute top-0 right-5 text-white text-right'>
+          <p className=''>La firma de Abogados de Tacna</p>
+          <p>Un bufete de abogados con pasión por el éxito</p>
+        </div>
+      </div>
+
     </>
   )
 }
