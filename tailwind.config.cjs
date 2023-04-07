@@ -5,7 +5,11 @@ module.exports = {
     extend: {
       backgroundColor:{
         'primary-color':'#3e1b17',
-      }
+        'secondary-color' : '#202020'
+      },
+      colors: {
+        'marron': '#c38848',
+      },
     },
   },
   plugins: [],

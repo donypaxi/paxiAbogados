@@ -12,10 +12,10 @@ export const ChevronLeft = () => {
 }
 
 // flecha derecha
-export const ChevronRight = () => {
+export const ChevronRight = (props) => {
   return (
     <>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={props.stroke} stroke="currentColor" className={`h-${props.area} w-${props.area}`}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
       </svg>
     </>
