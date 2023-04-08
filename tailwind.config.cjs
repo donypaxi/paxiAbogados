@@ -9,6 +9,7 @@ module.exports = {
       },
       colors: {
         'marron': '#c38848',
+        'marron2': '#996935'
       },
     },
   },
