@@ -5,6 +5,7 @@ import { Cuerpo } from './components/Cuerpo'
 import { DerechoCivil } from './components/DerechoCivil'
 import { ChooseUs } from './components/ChooseUs'
 import { Formulario } from './components/Formulario'
+import { Footer } from './components/Footer'
 
 export const App = () => {
   return (
@@ -14,7 +15,8 @@ export const App = () => {
       {/* <Cuerpo/> */}
       {/* <DerechoCivil/> */}
       {/* <ChooseUs/> */}
-      <Formulario/>
+      {/* <Formulario/> */}
+      <Footer/>
     </>
 
   )

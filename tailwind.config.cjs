@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       backgroundColor:{
         'primary-color':'#3e1b17',
-        'secondary-color' : '#202020'
+        'secondary-color' : '#202020',
+        'third-color': '#1A1C20'
       },
       colors: {
         'marron': '#c38848',
