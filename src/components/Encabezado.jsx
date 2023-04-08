@@ -31,7 +31,7 @@ export const Encabezado = () => {
                 </div>
             </div>
             {/* texto */}
-            <div className='h-96 flex justify-end items-center border border-red-500 '>
+            <div className='h-96 flex justify-end items-center '>
                 <div className=' text-white'>
                     <p className='text-2xl '>THE KRON LAW FIRM</p>
                 </div>

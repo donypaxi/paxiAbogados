@@ -17,7 +17,7 @@ export const DerechoCivil = () => {
                 <div className="border-b"></div>
             </div>
             <div className="pt-5">
-                <img className="" src="https://thekronlawfirm.com/wp-content/uploads/2023/02/shutterstock_1664392150-scaled.jpg" alt="" />
+                <img className="" src="https://thekronlawfirm.com/wp-content/uploads/2023/02/shutterstock_1112267939-scaled.jpg" alt="" />
                 <div className="py-5">
                     <p className=" text-2xl font-semibold ">CRIMINAL LAW</p>
                     <p className="">Being convicted of a crime can lead to devastating life consequences.</p>
@@ -26,7 +26,7 @@ export const DerechoCivil = () => {
                 <div className="border-b"></div>
             </div>
             <div className="pt-5">
-                <img className="" src="https://thekronlawfirm.com/wp-content/uploads/2023/02/shutterstock_1664392150-scaled.jpg" alt="" />
+                <img className="" src="https://thekronlawfirm.com/wp-content/uploads/2023/02/shutterstock_1939360618-scaled.jpg" alt="" />
                 <div className="py-5">
                     <p className=" text-2xl font-semibold ">CRIMINAL LAW</p>
                     <p className="">Being convicted of a crime can lead to devastating life consequences.</p>

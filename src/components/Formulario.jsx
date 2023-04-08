@@ -3,7 +3,7 @@ import {PhoneCall} from './Heroicons'
 export const Formulario = () => {
   return (
     <>
-        <div className="text-white bg-cover bg-center h-96 w-full" style={{backgroundImage:`url(${fondo2})`}}>
+        <div className="text-white bg-cover bg-center h-full w-full bg-repeat" style={{backgroundImage:`url(${fondo2})`}}>
             <div className=' h-full bg-black bg-opacity-50 py-5'>                
                 <div className='w-[90%] mx-auto'>
                     <p className=' text-3xl'>Request A Consultation</p>
@@ -15,9 +15,29 @@ export const Formulario = () => {
                             <p>CALL NOW 212-390-5988</p>
                         </div>
                     </div>
-                    <div>
+                    <form>
+                        <div className='grid grid-cols-2 gap-3'>
+                            <div className='col-span-1'>
+                                <label className='block' htmlFor="name">Name <span>(requerid)</span></label>
+                                <input className='w-full' type="text" id="name" />
+                            </div>
+                            <div className='col-span-1 ' >
+                                <label className='block' htmlFor="phone" >Phone</label>
+                                <input className='w-full' type="number" id="phone" />
+
+                            </div>
+                            <div className='col-span-2 ' >
+                                <label className='block' htmlFor="email">Email <span>(requerid)</span></label>
+                                <input className='w-full'  type="email" id="email" />
+                            </div>
+                            <div className='col-span-2'>
+                                <label className='w-full text-white' htmlFor="text-area">How Can We Help You?</label>
+                                <textarea className='w-full' name="" id="text-area" cols="50" rows="5"></textarea>
+                            </div>
+                            <input className='bg-marron col-span-2'  type="submit" value="SUBMIT" />
                         
-                    </div>
+                        </div>
+                    </form>
 
 
                 </div>

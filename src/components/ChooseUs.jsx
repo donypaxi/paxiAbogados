@@ -5,7 +5,7 @@ export const ChooseUs = () => {
         <h2 className="text-center text-3xl font-bold"> Why Choose Us?</h2>
         <div className="mx-auto border-b w-1/4"></div>
 
-        <div className="w-[90%] mx-auto grid md:grid-cols-3 items-center gap-4 mt-5">
+        <div className="w-[90%] mx-auto grid md:grid-cols-3 items-center gap-4 mt-5 my-5">
             <div className="flex flex-wrap items-center ">    
                 <img className="bg-marron w-12 h-12 rounded-full mr-2 p-2.5" src="https://thekronlawfirm.com/wp-content/uploads/2023/01/Proven-Results.png" alt="" />
                 <p className="text-lg font-bold"> Proven Result </p>
