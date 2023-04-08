@@ -10,12 +10,12 @@ import { Footer } from './components/Footer'
 export const App = () => {
   return (
     <>
-      {/* <Encabezado/> */}
-      {/* <Slider/> */}
-      {/* <Cuerpo/> */}
-      {/* <DerechoCivil/> */}
-      {/* <ChooseUs/> */}
-      {/* <Formulario/> */}
+      <Encabezado/>
+      <Slider/>
+      <Cuerpo/>
+      <DerechoCivil/>
+      <ChooseUs/>
+      <Formulario/>
       <Footer/>
     </>
 

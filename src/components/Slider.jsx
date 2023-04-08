@@ -1,10 +1,11 @@
 import { useState } from 'react'
-import figura1 from '../img/figura1.jpg'
-import figura2 from '../img/figura2.jpg'
-import figura3 from '../img/figura3.jpg'
-import figura4 from '../img/figura4.jpg'
+import dibujo1 from '../img/dibujo1.png'
+import dibujo2 from '../img/dibujo2.jpg'
+import dibujo3 from '../img/dibujo3.png'
+import dibujo4 from '../img/dibujo4.jpg'
+
 export const Slider = () => {
-  let dibujos = [figura1,figura2,figura3,figura4]
+  let dibujos = [dibujo1,dibujo2,dibujo3,dibujo4]
   const [item, setItem] = useState(3)
 
 
