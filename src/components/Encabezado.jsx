@@ -9,7 +9,7 @@ export const Encabezado = () => {
         <div className='h-screen bg-cover bg-center' style={{backgroundImage:`url(${fondo1})`}}>
             {/* celular y correo */}
             <div className='text-sm md:text-lg lg:text-xl flex justify-center items-center bg-black  w-full container mx-auto h-10 gap-1  text-white'>
-                <BtnLlamar/>
+                <BtnLlamar color="green" text="952693693"/>
                 <Facebook/>
             </div>
             {/* navbar */}
