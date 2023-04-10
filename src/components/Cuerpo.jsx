@@ -4,14 +4,14 @@ export const Cuerpo = () => {
     <>
         <div className="bg-secondary-color text-white py-10 px-10">
             <div>
-                <p className='mb-2 text-xl'>ABOUT US</p>
-                <p className="text-marron font-bold text-3xl">We’re in this together.Your Team and Ours </p>
+                <p className='mb-2 text-xl'>Sobre Nosotros</p>
+                <p className="text-marron font-bold text-3xl">Estamos en esto juntos.Tu equipo y el nuestro </p>
                 <div className="my-5 w-3/4 border-b border-marron"></div>
-                <p>The Kron Law Firm has more than a decade and a half of experience practicing law and is licensed in New York and New Jersey.They believe in taking as much time as necessary to achieve the most favorable outcome in each case they handle, even if it means taking fewer cases than they otherwise could.</p>
+                <p>El bufete de abogados Kron tiene más de una década y media de experiencia en la práctica de la ley y tiene licencia en Nueva York y Nueva Jersey.Creen en tomarse todo el tiempo que sea necesario para lograr el resultado más favorable en cada caso que manejan, incluso si eso significa tomar menos casos de los que de otro modo podrían.</p>
             </div>
             <div className="inline-block text-sm px-4 py-2 mt-5 border border-marron">
                 <div className='flex'>
-                    <p>Read More</p>
+                    <p>Leer more</p>
                     <ChevronRight stroke= {2} />
                 </div>
             </div>

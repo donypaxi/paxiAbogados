@@ -6,7 +6,7 @@ import { BtnLlamar } from './BtnLlamar';
 import { Facebook } from './Facebook';
 import { useState } from "react";
 export const Encabezado = () => {
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false)
 
   return (
     <>

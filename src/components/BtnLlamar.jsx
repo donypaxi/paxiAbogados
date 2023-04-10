@@ -4,7 +4,7 @@ export const BtnLlamar = (props) => {
 
 
     const btnLlamar = () => {
-        window.location.href = "tel:+51957696996";
+        window.location.href = "tel:+51952693693";
     }
   return (
     <>
