@@ -9,6 +9,7 @@ module.exports = {
         'third-color': '#1A1C20'
       },
       colors: {
+        'primary':'#3e1b17',
         'marron': '#c38848',
         'marron2': '#996935'
       },
