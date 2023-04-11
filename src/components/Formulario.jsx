@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import { FaWhatsapp } from "react-icons/fa";
 
 export const Formulario = () => {
-    const [formulario, setFormulario] = useState(true)
+    const [formulario, setFormulario] = useState(false)
     const [name, setName] = useState('')
     const [textarea, setTextarea] = useState('')
 

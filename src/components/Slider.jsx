@@ -33,11 +33,11 @@ export const Slider = () => {
 
   return (
     <>
-            <div className='border-2 h-96 w-full m-auto flex flex-col max-w-[1400px] justify-center items-center  relative'>
-                <div className="duration-500 h-full w-3/4 lg:w-2/4 bg-cover bg-center" style={{backgroundImage:`url(${dibujos[item]})`}}>
+            <div className=' h-96 w-full m-auto flex max-w-[1500px] justify-center items-center  relative'>
+                <div className="duration-500 h-full w-3/4  lg:w-2/4 bg-cover bg-center" style={{backgroundImage:`url(${dibujos[item]})`}}>
                 </div>
-                <FaAngleLeft onClick={anterior} className="text-marron font-bold stroke-2 hover:text-marron2 w-12 h-20 absolute  top-1/2 -translate-x-0 -translate-y-[50%] left-5" />
-                <FaAngleRight onClick={siguiente} className="text-marron font-bold stroke-2 hover:text-marron2 w-12 h-20 absolute  top-1/2 -translate-y-[50%] right-0"/>
+                <FaAngleLeft onClick={anterior} className="flex-none text-marron font-bold stroke-2 hover:text-marron2 w-8 h-16 absolute  top-1/2 -translate-x-0 -translate-y-[50%] left-1" />
+                <FaAngleRight onClick={siguiente} className="flex-none text-marron font-bold stroke-2 hover:text-marron2 w-8 h-16 absolute  top-1/2 -translate-y-[50%] right-1"/>
                 
             </div>
     </>
