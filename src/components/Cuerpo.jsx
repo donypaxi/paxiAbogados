@@ -2,7 +2,7 @@ import {ChevronRight} from './Heroicons'
 export const Cuerpo = () => {
   return (
     <>
-        <div className="bg-secondary-color text-white py-10 px-10">
+        <div className="w-full bg-secondary-color text-white py-10 px-10">
             <div>
                 <p className='mb-2 text-xl'>Sobre Nosotros</p>
                 <p className="text-marron font-bold text-3xl">Estamos en esto juntos.Tu equipo y el nuestro </p>
@@ -15,8 +15,9 @@ export const Cuerpo = () => {
                     <ChevronRight stroke= {2} />
                 </div>
             </div>
-
-            <img src="https://thekronlawfirm.com/wp-content/uploads/2023/01/daniel-kron-3-541x400.jpg" alt="" />
+            <div className='flex justify-center'>
+            <img className='' src="https://thekronlawfirm.com/wp-content/uploads/2023/01/daniel-kron-3-541x400.jpg" alt="" />
+            </div>
         </div>
 
     
