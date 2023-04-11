@@ -22,11 +22,11 @@ export const Encabezado = () => {
                 <FaAlignJustify onClick={()=>setOpen(!open)} size={25} className='md:hidden cursor-pointer text-marron '/>
 
                 <div className={`hidden md:flex text-[12px] md:text-none lg:text-sm xl:text-lg justify-center space-y-1.5 font-semibold py-4 text-white bg-primary-color`}>
-                <Link className="hover:text-marron hover:border-marron ml-5">INICIO</Link>
-                <Link className="hover:text-marron hover:border-marron ml-5">SOBRE NOSOTROS</Link>
-                <Link className="hover:text-marron hover:border-marron ml-5">DERECHO CIVIL</Link>
-                <Link className="hover:text-marron hover:border-marron ml-5">DERECHO PENAL</Link>
-                <Link className="hover:text-marron hover:border-marron ml-5">CONTÁCTENOS</Link>
+                <Link to="/" className="hover:text-marron hover:border-marron ml-5">INICIO</Link>
+                <Link to="/nosotros" className="hover:text-marron hover:border-marron ml-5">SOBRE NOSOTROS</Link>
+                <Link to="/derechopenal" className="hover:text-marron hover:border-marron ml-5">DERECHO CIVIL</Link>
+                <Link to="/derechocivil" className="hover:text-marron hover:border-marron ml-5">DERECHO PENAL</Link>
+                <Link to="/contactenos" className="hover:text-marron hover:border-marron ml-5">CONTÁCTENOS</Link>
                 </div>
 
             </div>
@@ -38,14 +38,11 @@ export const Encabezado = () => {
 
             <div className="flex justify-end">
                 <div className={` flex justify-center flex-col space-y-1.5 font-semibold  absolute py-4 text-white bg-primary-color ${open ? ' ' : 'hidden'} duration-700`}>
-                    <Link className="hover:text-marron hover:border-marron ml-5 border-b pb-3">INICIO</Link>
-                    <Link className="hover:text-marron hover:border-marron ml-5 border-b pb-3">SOBRE NOSOTROS</Link>
-                    <Link className="hover:text-marron hover:border-marron ml-5 border-b pb-3">DERECHO PENAL</Link>
-                    <Link className="hover:text-marron hover:border-marron ml-5 border-b pb-3">LEY CIVIL</Link>
-                    <Link className="hover:text-marron hover:border-marron ml-5 border-b pb-3">ABOGADO FEDERAL DE AVIACIÓN</Link>
-                    <Link className="hover:text-marron hover:border-marron ml-5 border-b pb-3">TESTIMONIAL</Link>
-                    <Link className="hover:text-marron hover:border-marron ml-5 border-b pb-3">BLOG</Link>
-                    <Link className="hover:text-marron hover:border-marron ml-5 border-b pb-3">CONTÁCTENOS</Link>
+                    <Link to="/" className="hover:text-marron hover:border-marron ml-5 border-b pb-3">INICIO</Link>
+                    <Link to="/nosotros" className="hover:text-marron hover:border-marron ml-5 border-b pb-3">SOBRE NOSOTROS</Link>
+                    <Link to="/derechopenal" className="hover:text-marron hover:border-marron ml-5 border-b pb-3">DERECHO PENAL</Link>
+                    <Link to="/derechocivil" className="hover:text-marron hover:border-marron ml-5 border-b pb-3">DERECHO CIVIL</Link>
+                    <Link to="/contactenos" className="hover:text-marron hover:border-marron ml-5 border-b pb-3">CONTÁCTENOS</Link>
                 </div>
             </div>
 

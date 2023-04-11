@@ -11,7 +11,7 @@ export const Cuerpo = () => {
             </div>
             <div className="inline-block text-sm px-4 py-2 mt-5 border border-marron">
                 <div className='flex'>
-                    <p>Leer more</p>
+                    <p>Leer más</p>
                     <ChevronRight stroke= {2} />
                 </div>
             </div>

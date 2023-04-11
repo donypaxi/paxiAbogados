@@ -1,22 +1,21 @@
-import React from 'react'
-import { Encabezado } from './components/Encabezado'
-import { Slider } from './components/Slider'
-import { Cuerpo } from './components/Cuerpo'
-import { DerechoCivil } from './components/DerechoCivil'
-import { ChooseUs } from './components/ChooseUs'
-import { Formulario } from './components/Formulario'
-import { Footer } from './components/Footer'
+import { Route, Routes } from "react-router-dom"
+import { InicioPage } from "./pages/InicioPage"
+import { NosotrosPage } from "./pages/NosotrosPage"
+import { DerechoPenalPage } from "./pages/DerechoPenalPage"
+import { ContactenosPage } from "./pages/ContactenosPage"
+import { DerechoCivilPage } from "./pages/DerechoCivilPage"
+
 
 export const App = () => {
   return (
     <>
-      <Encabezado/>
-      <Slider/>
-      <Cuerpo/>
-      <DerechoCivil/>
-      <ChooseUs/>
-      <Formulario/>
-      <Footer/>
+      <Routes>
+        <Route path="/" element={<InicioPage/>}/>
+        <Route path="/nosotros" element={<NosotrosPage/>}/>
+        <Route path="/derechopenal" element={<DerechoPenalPage/>}/>
+        <Route path="/derechocivil" element={<DerechoCivilPage/>}/>
+        <Route path="/contactenos" element={<ContactenosPage/>}/>
+      </Routes>
     </>
 
   )
