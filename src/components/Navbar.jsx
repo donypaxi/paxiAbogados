@@ -22,8 +22,8 @@ export const Navbar = () => {
             <div className="hidden md:flex text-[12px] md:text-none lg:text-sm xl:text-lg justify-center gap-4 font-semibold py-4 text-white bg-primary-color">
                 <Link to="/" className="hover:text-marron hover:border-marron ">INICIO</Link>
                 <Link to="/nosotros" className="hover:text-marron hover:border-marron ">SOBRE NOSOTROS</Link>
-                <Link to="/derechopenal" className="hover:text-marron hover:border-marron ">DERECHO CIVIL</Link>
-                <Link to="/derechocivil" className="hover:text-marron hover:border-marron ">DERECHO PENAL</Link>
+                <Link to="/derechopenal" className="hover:text-marron hover:border-marron ">DERECHO PENAL</Link>
+                <Link to="/derechocivil" className="hover:text-marron hover:border-marron ">DERECHO CIVIL</Link>
                 <Link to="/contactenos" className="hover:text-marron hover:border-marron ">CONTÁCTENOS</Link>
             </div>
         </div>

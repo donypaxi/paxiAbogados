@@ -24,13 +24,14 @@ export const Encabezado = () => {
                 <div className="hidden md:flex text-[12px] md:text-none lg:text-sm xl:text-lg justify-center gap-4 font-semibold py-4 text-white bg-primary-color">
                     <Link to="/" className="hover:text-marron hover:border-marron ">INICIO</Link>
                     <Link to="/nosotros" className="hover:text-marron hover:border-marron ">SOBRE NOSOTROS</Link>
-                    <Link to="/derechopenal" className="hover:text-marron hover:border-marron ">DERECHO CIVIL</Link>
-                    <Link to="/derechocivil" className="hover:text-marron hover:border-marron ">DERECHO PENAL</Link>
+                    <Link to="/derechopenal" className="hover:text-marron hover:border-marron ">DERECHO PENAL</Link>
+                    <Link to="/derechocivil" className="hover:text-marron hover:border-marron ">DERECHO CIVIL</Link>
                     <Link to="/contactenos" className="hover:text-marron hover:border-marron ">CONTÁCTENOS</Link>
                 </div>
             </div>      
             <div className="flex justify-end">
-                <div className={` flex  justify-center  flex-col space-y-1.5 font-semibold  absolute py-4 text-white bg-primary-color ${open ? ' ' : 'hidden'} duration-700`}>
+                <div className={` flex  justify-center  flex-col space-y-1.5 font-semibold  absolute py-4 text-white bg-primary-color 
+                ${open ? ' ' : 'hidden'} duration-700`}>
                     <Link to="/" className="hover:text-marron hover:border-marron ml-5 border-b pb-3">INICIO</Link>
                     <Link to="/nosotros" className="hover:text-marron hover:border-marron ml-5 border-b pb-3">SOBRE NOSOTROS</Link>
                     <Link to="/derechopenal" className="hover:text-marron hover:border-marron ml-5 border-b pb-3">DERECHO PENAL</Link>
@@ -42,7 +43,7 @@ export const Encabezado = () => {
 
             <div className='h-96 flex justify-end items-center mr-12 min-w-24 '>
                 <div className=' text-white'>
-                    <p className='text-2xl '>LA FIRMA DE ABOGADOS PAXI</p>
+                    <p className='text-2xl '>LA FIRMA DE PAXI ABOGADOS</p>
                 </div>
             </div>
         </div>

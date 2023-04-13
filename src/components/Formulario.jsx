@@ -17,14 +17,17 @@ export const Formulario = () => {
                     <p className=' text-3xl'>Solicitar una consulta</p>
                     <div className='mt-5 border-b border-marron w-2/4'></div>
                     <p className='py-3'>Póngase en contacto con el equipo en Nueva York que luchará por usted</p>
-                    <div className='inline-block gap-3 '>
-                        <div className='text-xl flex items-center gap-3 ml-5 mb-5 py-2 px-5 bg-marron2 hover:bg-marron'>
-                            <BtnLlamar color="white" text="Llamar ahora 952693693"/>
+                    <div className='text-white inline-block '>
+                        <div className='mb-5 flex p-2 items-center bg-marron2 hover:bg-marron'>
+                            <FaWhatsapp/>
+                            <BtnLlamar text="Llamar ahora 952693693"/>
                         </div>
-                        <button onClick={()=>setFormulario(!formulario) } className='text-xl flex items-center gap-3 ml-5 mb-5 py-2 px-5 bg-marron2 hover:bg-marron'>
-                        <FaWhatsapp/>
-                            Mensajear ahora 
-                        </button>
+                        <div className='flex items-center bg-marron2 hover:bg-marron py-2 px-2'>
+                            <FaWhatsapp/>
+                            <button onClick={()=>setFormulario(!formulario) } >
+                                Mensajear ahora
+                            </button>
+                        </div>
                     </div>
                     <form className={`${formulario ? '': 'hidden'} duration-500 w-[90%] mx-auto`}>
                         <div className='grid grid-cols-2 gap-3'>
