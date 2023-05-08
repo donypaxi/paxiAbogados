@@ -27,7 +27,7 @@ export const Encabezado = () => {
                     <Link to="/derechopenal" className="hover:text-marron hover:border-marron ">DERECHO PENAL</Link>
                     <Link to="/derechocivil" className="hover:text-marron hover:border-marron ">DERECHO CIVIL</Link>
                     <Link to="/contactenos" className="hover:text-marron hover:border-marron ">CONTÁCTENOS</Link>
-                    <Link to="/autenticacion" className="hover:text-marron hover:border-marron ">INICIA SESION</Link>
+                    <Link to="/login" className="hover:text-marron hover:border-marron ">INICIA SESION</Link>
                 </div>
             </div>      
             <div className="flex justify-end">
@@ -38,7 +38,7 @@ export const Encabezado = () => {
                     <Link to="/derechopenal" className="hover:text-marron hover:border-marron ml-5 border-b pb-3">DERECHO PENAL</Link>
                     <Link to="/derechocivil" className="hover:text-marron hover:border-marron ml-5 border-b pb-3">DERECHO CIVIL</Link>
                     <Link to="/contactenos" className="hover:text-marron hover:border-marron ml-5 border-b pb-3">CONTÁCTENOS</Link>
-                    <Link to="/autenticacion" className="hover:text-marron hover:border-marron ml-5 border-b pb-3">INICIA SESION</Link>
+                    <Link to="/login" className="hover:text-marron hover:border-marron ml-5 border-b pb-3">INICIA SESION</Link>
                 </div>
             </div>
 

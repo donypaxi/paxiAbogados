@@ -1,20 +1,22 @@
-import { Route, Routes } from "react-router-dom"
-import { InicioPage,NosotrosPage,DerechoPenalPage,DerechoCivilPage,ContactenosPage,SesionPage } from "./pages"
+import { useReducer } from "react"
+import { AuthContext } from "./auth/AuthContext"
+import { AppRouter } from "./routes/AppRouter"
+import { authReducer } from "./auth/authReducer"
 
+const init = ()=> {
+  return  JSON.parse(localStorage.getItem('user')) || {
+    logged:false
+  }
+}
 
 
 export const App = () => {
-  return (
-    <>
-      <Routes>
-        <Route path="/" element={<InicioPage/>}/>
-        <Route path="/nosotros" element={<NosotrosPage/>}/>
-        <Route path="/derechopenal" element={<DerechoPenalPage/>}/>
-        <Route path="/derechocivil" element={<DerechoCivilPage/>}/>
-        <Route path="/contactenos" element={<ContactenosPage/>}/>
-        <Route path="/autenticacion" element={<SesionPage/>}/>
-      </Routes>
-    </>
 
+  const [user,dispath] = useReducer(authReducer,{},init)
+
+  return (
+    <AuthContext.Provider value={{user,dispath}}>
+      <AppRouter/>    
+    </AuthContext.Provider>
   )
 }
