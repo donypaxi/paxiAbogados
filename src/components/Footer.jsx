@@ -35,7 +35,7 @@ export const Footer = () => {
                 <p className="my-4 text-center text-2xl">Ubicanos en</p>
                 <div className="w-[90%] mx-auto space-y-1 flex flex-col items-center">
                     <div className="flex text-center text-xl gap-2">
-                    <p className="mx-32 text-center "> Calle presbitero Andia Edificios Jorge Basadre Grohomann Bloque B Departamento 101 oficina 01 (frente al poder judicial) </p>
+                    <p className="mb-5 text-center "> Calle presbitero Andia Edificios Jorge Basadre Grohomann Bloque B Departamento 101 oficina 01 (frente al poder judicial) </p>
                     </div>
                 
                 
