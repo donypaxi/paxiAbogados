@@ -1,11 +1,13 @@
-import { clientes } from "./tablaClientes"
 
-export const filterCliente = (datos) => {
-    const {expediente,cliente} = datos
-    const resultado = clientes.filter ((clienteItem) => {
+export const filterCliente = (tablaClientes,{expediente,cliente,proceso}) => {
+    return tablaClientes.filter((clienteItem)=>{
         const clienteExpediente = clienteItem.expediente.toString();
         const clienteNombre = clienteItem.cliente.toLowerCase();
-        return clienteExpediente.includes(expediente) && clienteNombre.includes(cliente.toLowerCase())
-    });
-    return resultado
+        const clienteProceso = clienteItem.proceso.toLowerCase();
+        console.log(typeof expediente)
+        console.log(typeof clienteExpediente)
+        return clienteExpediente.includes(expediente) 
+            && clienteNombre.includes(cliente.toLowerCase()) 
+            && clienteProceso.includes(proceso.toLowerCase())
+    })
 }
