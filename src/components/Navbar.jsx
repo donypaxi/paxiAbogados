@@ -1,4 +1,4 @@
-import portada from '../img/portada.png'
+import portada from '../assets/img/portada.png'
 import { Link } from "react-router-dom";
 import { FaAlignJustify } from "react-icons/fa";
 import { BtnLlamar } from './BtnLlamar';

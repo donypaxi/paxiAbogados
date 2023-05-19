@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import fondo1 from '../img/fondo1.jpg'
-import portada from '../img/portada.png'
+import fondo1 from '../assets/img/fondo1.jpg'
+import portada from '../assets/img/portada.png'
 import { FaAlignJustify } from "react-icons/fa";
 import { BtnLlamar } from './BtnLlamar';
 import { Facebook } from './Facebook';

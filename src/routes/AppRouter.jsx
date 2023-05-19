@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom"
-import { InicioPage,NosotrosPage,DerechoPenalPage,DerechoCivilPage,ContactenosPage,SesionPage, Dashboard } from "../pages"
+import { InicioPage,NosotrosPage,DerechoPenalPage,DerechoCivilPage,ContactenosPage,SesionPage, Administrador } from "../pages"
+import { Procesos } from "../pagesAdministrable/Procesos"
 
 
 export const AppRouter = () => {
@@ -12,9 +13,8 @@ export const AppRouter = () => {
         <Route path="/derechocivil" element={<DerechoCivilPage/>}/>
         <Route path="/contactenos" element={<ContactenosPage/>}/>
         <Route path="/login" element={<SesionPage/>}/>
-      </Routes>
-      <Routes>
-        <Route path="/admin" element={<Dashboard/>}/>
+        <Route path="/administrador" element={<Administrador/>}/>
+        <Route path="/administrador/procesos" element={<Procesos/>}/>
       </Routes>
 
       

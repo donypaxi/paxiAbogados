@@ -1,5 +1,5 @@
 
-import { IniciarSesion } from "../components/IniciarSesion";
+import { IniciarSesion } from "../layout/IniciarSesion";
 import { Navbar } from "../components/Navbar";
 
 export const SesionPage = () => {

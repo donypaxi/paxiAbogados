@@ -1,6 +1,7 @@
 import { VscAccount } from "react-icons/vsc";
 import { FaLock, FaUserAlt } from "react-icons/fa";
 import { useState } from "react";
+import {  Link } from "react-router-dom";
 
 export const IniciarSesion = () => {
 
@@ -45,8 +46,12 @@ export const IniciarSesion = () => {
                 <div className="mr-2"><FaLock/></div>
                 <input onChange={(e)=>setPassword(e.target.value)} value={password} className="focus:outline-none" type="password" placeholder="password"/>
             </div>
-            <input className="cursor-pointer w-full rounded-md text-white bg-red-800 hover:bg-red-500" type="submit" onClick={btnEnviar}  value="LOGIN"/>
+                <input  className="cursor-pointer w-full rounded-md text-white bg-red-800 hover:bg-red-500" type="submit" onClick={btnEnviar}  value="LOGIN"/>
             </form>
+            <Link to="/administrador">
+                <button className="text-white py-5 border-2 border-red-500 rounded-xl mt-10 mx-auto w-full">ADMINISTRADOR</button>
+            </Link>
+
         </div>
         </div>
     </>

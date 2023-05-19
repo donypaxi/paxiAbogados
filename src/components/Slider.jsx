@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import dibujo1 from '../img/dibujo1.png'
-import dibujo2 from '../img/dibujo2.jpg'
-import dibujo3 from '../img/dibujo3.png'
-import dibujo4 from '../img/dibujo4.jpg'
+import dibujo1 from '../assets/img/dibujo1.png'
+import dibujo2 from '../assets/img/dibujo2.jpg'
+import dibujo3 from '../assets/img/dibujo3.png'
+import dibujo4 from '../assets/img/dibujo4.jpg'
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 export const Slider = () => {

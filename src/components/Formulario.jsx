@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import fondo2 from '../img/fondo2.jpg'
+import fondo2 from '../assets/img/fondo2.jpg'
 import { BtnLlamar } from './BtnLlamar'
 import {Link} from 'react-router-dom'
 import { FaWhatsapp } from "react-icons/fa";
