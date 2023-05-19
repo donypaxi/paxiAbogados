@@ -6,7 +6,6 @@ export const ProcesosLayout = () => {
     <>
         <div className="w-full p-10">
             <Search/>
-
         </div>
         
     </>

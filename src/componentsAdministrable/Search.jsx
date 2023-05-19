@@ -20,7 +20,7 @@ export const Search = () => {
        const filtroExpediente = filterCliente(datos)
         setDatosFiltrados(filtroExpediente)
         // console.log(datosFiltrados)
-    }, [expediente])
+    }, [expediente,cliente])
     
 
   return (

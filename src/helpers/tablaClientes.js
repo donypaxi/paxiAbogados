@@ -1,6 +1,6 @@
 export const clientes = [
         {
-            expediente: 23445,
+            expediente: 223340,
             cliente: 'Dony paxi',
             proceso: 'Civil',
             fecha:  '12/06/2021',
@@ -8,7 +8,7 @@ export const clientes = [
 
         },
         {
-            expediente: 123458,
+            expediente: 223341,
             cliente: 'Teodoro paxi',
             proceso: 'Civil',
             fecha:  '12/06/2021',
@@ -16,7 +16,7 @@ export const clientes = [
 
         },
         {
-            expediente: 123456,
+            expediente: 223342,
             cliente: 'Hector zapana ',
             proceso: 'Civil',
             fecha:  '12/06/2021',
@@ -24,42 +24,42 @@ export const clientes = [
 
         },
         {
-            expediente:2342567,
+            expediente:223343,
             cliente:'Jennifer paxi',
             proceso:'Penales',
             fecha:	'14/08/2022',
             materia: 'Rectificación de partida de nacimiento'
         },
         {
-            expediente:253433,
+            expediente:331234,
             cliente:'Williams paxi',
             proceso:'Laborales',
             fecha:'12/12/2023',
             materia: 'Rectificación de partida de nacimiento'
         },
         {
-            expediente:543212,
+            expediente:331235,
             cliente:'angel paxi',
             proceso:'Laborales',
             fecha:'12/12/2023',
             materia: 'Rectificación de partida de nacimiento'
         },
         {
-            expediente:12345,
+            expediente:331236,
             cliente:'angel paxi',
             proceso:'Laborales',
             fecha:'12/12/2023',
             materia: 'Rectificación de partida de nacimiento'
         },
         {
-            expediente:234234,
+            expediente:331237,
             cliente:'angel paxi',
             proceso:'Laborales',
             fecha:'12/12/2023',
             materia: 'Rectificación de partida de nacimiento'
         },
         {
-            expediente:234235,
+            expediente:331238,
             cliente:'angel paxi',
             proceso:'Laborales',
             fecha:'12/12/2023',
