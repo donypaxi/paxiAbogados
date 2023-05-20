@@ -1,6 +1,12 @@
+import { useDispatch } from "react-redux"
+import { verVentana } from "../store/slices/clientes/clientesSlice"
 
 export const VentanaEditar = () => {
-        
+    
+    const dispatch = useDispatch()
+    const handleCancelar = () => {
+        dispatch(verVentana(false))
+    }
 
   return (
     <>
@@ -43,7 +49,7 @@ export const VentanaEditar = () => {
             </div>
             <br />
             <input className="text-white font-semibold p-2 rounded-lg cursor-pointer bg-green-700" type="button" value="guardar" />
-            <input onClick={()=>handleCancelar()} className="text-white font-semibold p-2 rounded-lg cursor-pointer bg-red-700" type="button" value="cancelar" />
+            <input onClick={handleCancelar} className="text-white font-semibold p-2 rounded-lg cursor-pointer bg-red-700" type="button" value="cancelar" />
         </div>
     </>
   )

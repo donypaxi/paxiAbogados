@@ -1,22 +1,15 @@
-import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { HiOutlinePencil } from "react-icons/hi";
-import { HiOutlineTrash } from "react-icons/hi";
+import { HiOutlineTrash,HiOutlinePencil } from "react-icons/hi";
 import { VentanaEditar } from "../componentsAdministrable/VentanaEditar";
+import { verVentana } from "../store/slices/clientes/clientesSlice";
 
 export const TableLayout = () => {
     
-    const clientes = useSelector((state) => state.clientes.mostrar)
-    // const [mostrar, setMostrar] = useState(clientes)
-    const [ventana, setVentana] = useState(false)
-    // useEffect(() => {
-    //     setMostrar(clientes)
-    // }, [clientes])
-
-    
+    const clientes = useSelector((state) => state.clientes.mostrar);
+    const mostrarVentana = useSelector((state)=> state.clientes.ventana)
+    const dispatch =useDispatch()
     const btnEditar = (id) => {
-        setVentana(!ventana)
-        
+        dispatch(verVentana(true))
     }
     const btnEliminar = (id) => {
         console.log(id)
@@ -25,7 +18,7 @@ export const TableLayout = () => {
     
   return (
     <>
-        {ventana ? <VentanaEditar/> : null}
+        {mostrarVentana ? <VentanaEditar/> : null}
         <div className="flex  items-center border-2 w-full mt-20">
             <table className="table-fixed">
                 <thead>
