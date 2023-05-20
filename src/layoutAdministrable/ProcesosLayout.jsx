@@ -4,7 +4,7 @@ import { TableLayout } from "./TableLayout"
 export const ProcesosLayout = () => {
   return (
     <>
-        <div className="w-full p-10">
+        <div className="relativa w-full p-10">
             <Search/>
             <TableLayout/>
         </div>

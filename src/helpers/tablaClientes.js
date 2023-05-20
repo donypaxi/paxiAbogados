@@ -1,4 +1,6 @@
-export const tablaClientes = [
+
+
+export let tablaClientes = [
         {
             id: 223321,
             expediente: 223321,
@@ -152,4 +154,12 @@ export const tablaClientes = [
 
     ]
 
-  
+
+// export const editarCliente = (editarCliente,{expediente,cliente,proceso,fecha,materia})=> {
+//     const indice = tablaClientes.findIndex(cliente => cliente.id === editarCliente);
+//         console.log(indice)
+
+//     productos[indice].nombre = 'Nuevo nombre';
+//     productos[indice].precio = 50;
+
+// }

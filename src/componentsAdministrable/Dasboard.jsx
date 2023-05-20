@@ -9,14 +9,9 @@ export const Dasboard = () => {
           <div className='bg-cover bg-center h-full w-full' style={{backgroundImage:`url(${dibujo2})`}}>
             <div className=' border-2 text-black bg-black/70 h-full w-full '>
               <div className=' flex flex-col m-5 gap-5  text-white font-semibold  '>
-                <Link to="/administrador/procesos">Procesos</Link>
-                <Link>Civiles</Link>
-                <Link>Penales</Link>
-                <Link>Laborales</Link>
-                <Link>Municipales</Link>
-                <Link>Regionales</Link>
-                <Link>Sunat</Link>
-                <Link>Procesos Ejecutivos</Link>
+                <Link to="/administrador/procesos">Busqueda de Procesos</Link>
+                <Link to="/administrador/nuevo">Nuevo Proceso</Link>
+                <Link>Notificación y Recodatorios</Link>
               </div>
             </div>
           </div>

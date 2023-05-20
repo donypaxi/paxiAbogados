@@ -1,28 +1,32 @@
 import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { HiOutlinePencil } from "react-icons/hi";
 import { HiOutlineTrash } from "react-icons/hi";
+import { VentanaEditar } from "../componentsAdministrable/VentanaEditar";
 
 export const TableLayout = () => {
     
-    const clientes = useSelector((state) => state.clientes.clientes)
+    const clientes = useSelector((state) => state.clientes.mostrar)
+    // const [mostrar, setMostrar] = useState(clientes)
+    const [ventana, setVentana] = useState(false)
+    // useEffect(() => {
+    //     setMostrar(clientes)
+    // }, [clientes])
 
-    const [mostrar, setMostrar] = useState([])
-    useEffect(() => {
-        setMostrar(clientes)
-    }, [clientes])
-
+    
     const btnEditar = (id) => {
-        console.log(id)
+        setVentana(!ventana)
+        
     }
     const btnEliminar = (id) => {
-       
+        console.log(id)
     }
+    
     
   return (
     <>
+        {ventana ? <VentanaEditar/> : null}
         <div className="flex  items-center border-2 w-full mt-20">
-
             <table className="table-fixed">
                 <thead>
                     <tr>
@@ -34,7 +38,7 @@ export const TableLayout = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {mostrar.map(({id,expediente,cliente,proceso,fecha,materia}) => (
+                    {clientes.map(({id,expediente,cliente,proceso,fecha,materia}) => (
                         <tr key={id}>
                             <th className='px-4'>{expediente}</th>
                             <th className='px-4'>{cliente}</th>
@@ -48,7 +52,7 @@ export const TableLayout = () => {
                                 </button>
                             </th>
                             <th className='px-4'>
-                                <button onClick={()=>btnEliminar(index)} className='flex items-center gap-x-2 bg-red-500 p-2 rounded-lg text-white '>
+                                <button onClick={()=>btnEliminar(id)} className='flex items-center gap-x-2 bg-red-500 p-2 rounded-lg text-white '>
                                     <HiOutlineTrash/>
                                     <p>Eliminar</p>
                                 </button>

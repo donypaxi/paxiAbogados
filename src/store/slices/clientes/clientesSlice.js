@@ -5,15 +5,18 @@ import { filterCliente } from '../../../helpers';
 export const clientesSlice = createSlice({
     name: 'clientes',
     initialState:{
-        clientes:tablaClientes
-    }  ,
+        clientes:tablaClientes,
+        mostrar: tablaClientes
+    },
     reducers: {
+        addCliente:(state,action) => {
+            state.clientes.unshift(action.payload)
+        }   ,    
         filter: (state, action ) => {
             const {expediente,cliente,proceso} = action.payload
-            const resultado = filterCliente(tablaClientes,{expediente,cliente,proceso}) 
-            state.clientes = resultado
-            console.log('esto' , resultado)
-        },
+            const resultado = filterCliente(state.clientes,{expediente,cliente,proceso}) 
+            state.mostrar = resultado
+        }
     }
 });
-export const { filter } = clientesSlice.actions;
+export const { filter, addCliente } = clientesSlice.actions;   
