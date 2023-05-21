@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux"
-import { verVentana } from "../store/slices/clientes/clientesSlice"
+import { editModal } from "../store/slices/clientes/clientesSlice"
 
-export const VentanaEditar = () => {
+export const EditModal = () => {
     
     const dispatch = useDispatch()
 
@@ -10,7 +10,7 @@ export const VentanaEditar = () => {
     } 
 
     const handleCancelar = () => {
-        dispatch(verVentana(false))
+        dispatch(editModal(false))
     }
 
   return (

@@ -1,7 +1,7 @@
 import { Search } from "../componentsAdministrable/Search"
-import { TableLayout } from "./TableLayout"
+import { TableLayout } from "../componentsAdministrable/TableLayout"
 
-export const ProcesosLayout = () => {
+export const SearchLayout = () => {
   return (
     <>
         <div className="relativa w-full p-10">

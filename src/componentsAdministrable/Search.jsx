@@ -10,9 +10,7 @@ export const Search = () => {
     let datos ={
         expediente:'',
         cliente:'',
-        proceso:'',
-        fecha:'',
-        materia:''
+        proceso:''
     }
     const [expediente, setExpediente] = useState('')
     const [cliente, setCliente] = useState('')
@@ -31,7 +29,6 @@ export const Search = () => {
             <div>
                 <label className="pr-2">Ingrese el Expediente</label>
                 <input
-                    // onWheel={(e) => e.target.blur()}
                     onChange={(e)=>setExpediente(e.target.value)} className="border-2 bg-slate-100 text-black px-2 border-slate-200 placeholder-slate-400 " type="number"/>
             </div>
             <div>

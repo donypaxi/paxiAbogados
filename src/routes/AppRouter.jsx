@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import { Administrador, HomePage,AboutUsPage,DerechoPenalPage,DerechoCivilPage,ContactUsPage,LoginPage } from "../pages"
-import { Procesos,NuevoProceso } from "../pagesAdministrable"
+import { SearchPage,NewProcessPage } from "../pagesAdministrable"
 
 
 export const AppRouter = () => {
@@ -14,8 +14,8 @@ export const AppRouter = () => {
         <Route path="/contactenos" element={<ContactUsPage/>}/>
         <Route path="/login" element={<LoginPage/>}/>
         <Route path="/administrador" element={<Administrador/>}/>
-        <Route path="/administrador/procesos" element={<Procesos/>}/>
-        <Route path="/administrador/nuevo" element={<NuevoProceso/>}/>
+        <Route path="/administrador/procesos" element={<SearchPage/>}/>
+        <Route path="/administrador/nuevo" element={<NewProcessPage/>}/>
       </Routes>
 
       

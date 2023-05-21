@@ -1,11 +1,10 @@
 import { useState } from "react"
-import { tablaClientes } from "../helpers"
-import { useDispatch } from "react-redux"
-import { addCliente } from "../store/slices/clientes/clientesSlice"
+import { useDispatch, useSelector } from "react-redux"
+import { addClient } from "../store/slices/clientes/clientesSlice"
 
-export const NuevoProcesoLayout = () => {
+export const NewProcessLayout = () => {
 
-  let nuevoCliente ={
+  let newClient ={
     id:'',
     expediente:'',
     cliente:'',
@@ -22,20 +21,22 @@ export const NuevoProcesoLayout = () => {
   const [materia, setMateria] = useState('')
   const [alerta, setAlerta] = useState(false)
 
+  const clientes = useSelector((state)=>state.clientes.clientes)
   const dispatch = useDispatch()
 
-    nuevoCliente.id=id;
-    nuevoCliente.expediente=expediente;
-    nuevoCliente.cliente=cliente
-    nuevoCliente.proceso=proceso
-    nuevoCliente.fecha=fecha
-    nuevoCliente.materia=materia
+
+    newClient.id=id;
+    newClient.expediente=expediente;
+    newClient.cliente=cliente
+    newClient.proceso=proceso
+    newClient.fecha=fecha
+    newClient.materia=materia
 
     const btnCrear = () => {
-      const idEncontrado = tablaClientes.filter((item)=>{
+      const foundId = clientes.filter((item)=>{
         return item.id.toString() === id
       })
-      if(idEncontrado.length>0){
+      if(foundId.length>0){
         setAlerta(true)
         console.log(`Este Id no se puede utilizar ${id}`)
       }else {
@@ -47,10 +48,8 @@ export const NuevoProcesoLayout = () => {
         setMateria('')
         console.log('si se puede utilizar');
 
-        dispatch(addCliente(nuevoCliente))
+        dispatch(addClient(newClient))
       }
-
-
     }
     
 

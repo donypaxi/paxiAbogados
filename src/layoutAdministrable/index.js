@@ -1,3 +1,3 @@
-export * from './NuevoProcesoLayout'
-export * from './TableLayout'
-export * from './ProcesosLayout'
+export * from './NewProcessLayout'
+export * from '../componentsAdministrable/TableLayout'
+export * from './SearchLayout'

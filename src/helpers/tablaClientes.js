@@ -149,17 +149,5 @@ export let tablaClientes = [
             proceso:'Procesos Ejecutivos',
             fecha:'19/10/2020',
             materia: 'Rectificación de partida de nacimiento'
-        },
-        
-
+        },        
     ]
-
-
-// export const editarCliente = (editarCliente,{expediente,cliente,proceso,fecha,materia})=> {
-//     const indice = tablaClientes.findIndex(cliente => cliente.id === editarCliente);
-//         console.log(indice)
-
-//     productos[indice].nombre = 'Nuevo nombre';
-//     productos[indice].precio = 50;
-
-// }
