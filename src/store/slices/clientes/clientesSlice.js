@@ -7,9 +7,17 @@ export const clientesSlice = createSlice({
     initialState:{
         clientes:tablaClientes,
         mostrar: tablaClientes,
-        ventana:false
+        ventana:false,
+        itemEditar:null
     },
     reducers: {
+        updateCliente:(state,action) => {
+            const user = action.payload
+            const buscarItem = state.clientes.findIndex(cliente=>cliente.id === user)
+            
+            console.log(buscarItem)
+            // state.clientes.splice(user,1)
+        },
         addCliente:(state,action) => {
             state.clientes.unshift(action.payload)
         },    
@@ -24,4 +32,4 @@ export const clientesSlice = createSlice({
 
     }
 });
-export const { filter, addCliente,verVentana } = clientesSlice.actions;   
+export const { filter, addCliente,verVentana,updateCliente } = clientesSlice.actions;   

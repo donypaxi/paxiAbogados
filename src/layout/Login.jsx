@@ -3,7 +3,7 @@ import { FaLock, FaUserAlt } from "react-icons/fa";
 import { useState } from "react";
 import {  Link } from "react-router-dom";
 
-export const IniciarSesion = () => {
+export const Login = () => {
 
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')

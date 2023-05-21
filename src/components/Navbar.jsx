@@ -1,7 +1,7 @@
 import portada from '../assets/img/portada.png'
 import { Link } from "react-router-dom";
 import { FaAlignJustify } from "react-icons/fa";
-import { BtnLlamar } from './BtnLlamar';
+import { BtnCallMe } from './BtnCallMe';
 import { Facebook } from './Facebook';
 import { useState } from "react";
 
@@ -12,7 +12,7 @@ export const Navbar = () => {
     <>
       <div className='relative w-full bg-center'>
         <div className='text-sm md:text-lg lg:text-xl flex w-full bg-black justify-center items-center mx-auto h-10 gap-1  text-white'>
-            <BtnLlamar color="green" text="952693693"/>
+            <BtnCallMe color="green" text="952693693"/>
             <Facebook/>
         </div>
         {/* navbar */}

@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import fondo1 from '../assets/img/fondo1.jpg'
 import portada from '../assets/img/portada.png'
 import { FaAlignJustify } from "react-icons/fa";
-import { BtnLlamar } from './BtnLlamar';
+import { BtnCallMe } from './BtnCallMe';
 import { Facebook } from './Facebook';
 import { useState } from "react";
-export const Encabezado = () => {
+export const Header = () => {
     const [open, setOpen] = useState(false)
 
   return (
@@ -13,7 +13,7 @@ export const Encabezado = () => {
         <div className='relative w-full h-screen bg-cover bg-center' style={{backgroundImage:`url(${fondo1})`}}>
             {/* celular y correo */}
             <div className='text-sm md:text-lg lg:text-xl flex justify-center items-center bg-black  w-full container mx-auto h-10 gap-1  text-white'>
-                <BtnLlamar color="green" text="952693693"/>
+                <BtnCallMe color="green" text="952693693"/>
                 <Facebook/>
             </div>
             {/* navbar */}

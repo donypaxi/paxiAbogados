@@ -1,5 +1,5 @@
 import {ChevronRight} from './Heroicons'
-export const Cuerpo = () => {
+export const Body = () => {
   return (
     <>
         <div className="w-full bg-secondary-color text-white py-10 px-10">

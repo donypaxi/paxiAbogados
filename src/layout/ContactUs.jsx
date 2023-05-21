@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { BtnLlamar } from "../components/BtnLlamar";
+import { BtnCallMe } from "../components/BtnCallMe";
 import fondo1 from '../assets/img/fondo1.jpg'
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-export const Contactenos = () => {
-    const [formulario, setFormulario] = useState(false)
+export const ContactUs = () => {
+    const [form, setForm] = useState(false)
     const [name, setName] = useState('')
     const [textarea, setTextarea] = useState('')
   return (
@@ -15,14 +15,14 @@ export const Contactenos = () => {
           <p className="text-center mb-5 text-2xl">Póngase en contacto con nosotros para una consulta</p>
           <div className='inline-block '>
               <div className=' text-xl ml-5 mb-5 py-2 px-5 bg-marron2 hover:bg-marron'>
-                <BtnLlamar color="white" text="Llamar ahora 952693693"/>
+                <BtnCallMe color="white" text="Llamar ahora 952693693"/>
               </div>
-              <button onClick={()=>setFormulario(!formulario) } className='text-xl flex items-center gap-3 ml-5 mb-5 py-2 px-5 bg-marron2 hover:bg-marron'>
+              <button onClick={()=>setForm(!form) } className='text-xl flex items-center gap-3 ml-5 mb-5 py-2 px-5 bg-marron2 hover:bg-marron'>
                 <FaWhatsapp/>
                 Mensajear ahora 
               </button>
           </div>
-          <form className={`${formulario ? '': 'hidden'} duration-500 w-[90%] mx-auto`}>
+          <form className={`${form ? '': 'hidden'} duration-500 w-[90%] mx-auto`}>
               <div className='grid grid-cols-2 gap-3'>
                   <div className='col-span-1'>
                       <label className='block' htmlFor="name">Nombre <span>(requerido)</span></label>

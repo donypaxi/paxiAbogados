@@ -4,6 +4,11 @@ import { verVentana } from "../store/slices/clientes/clientesSlice"
 export const VentanaEditar = () => {
     
     const dispatch = useDispatch()
+
+    const handleEditar = () => {
+        
+    } 
+
     const handleCancelar = () => {
         dispatch(verVentana(false))
     }
@@ -48,7 +53,7 @@ export const VentanaEditar = () => {
                     className="border-2 bg-slate-100 text-black px-2 border-slate-200 placeholder-slate-400 " type="number"/>
             </div>
             <br />
-            <input className="text-white font-semibold p-2 rounded-lg cursor-pointer bg-green-700" type="button" value="guardar" />
+            <input onClick={handleEditar} className="text-white font-semibold p-2 rounded-lg cursor-pointer bg-green-700" type="button" value="guardar" />
             <input onClick={handleCancelar} className="text-white font-semibold p-2 rounded-lg cursor-pointer bg-red-700" type="button" value="cancelar" />
         </div>
     </>

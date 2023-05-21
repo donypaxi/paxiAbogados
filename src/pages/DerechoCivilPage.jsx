@@ -7,7 +7,7 @@ export const DerechoCivilPage = () => {
   
   return (
     <>
-      <Navbar/> 
+      <Navbar/>
       <DerechoCivil/>      
       <Footer/>
     </>

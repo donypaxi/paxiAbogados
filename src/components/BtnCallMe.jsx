@@ -1,5 +1,5 @@
 
-export const BtnLlamar = (props) => {
+export const BtnCallMe = (props) => {
 
 
     const btnLlamar = () => {

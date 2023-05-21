@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import fondo2 from '../assets/img/fondo2.jpg'
-import { BtnLlamar } from './BtnLlamar'
+import { BtnCallMe } from './BtnCallMe'
 import {Link} from 'react-router-dom'
 import { FaWhatsapp } from "react-icons/fa";
 
-export const Formulario = () => {
-    const [formulario, setFormulario] = useState(false)
+export const Form = () => {
+    const [form, setForm] = useState(false)
     const [name, setName] = useState('')
     const [textarea, setTextarea] = useState('')
 
@@ -20,16 +20,16 @@ export const Formulario = () => {
                     <div className='text-white inline-block '>
                         <div className='mb-5 flex p-2 items-center bg-marron2 hover:bg-marron'>
                             <FaWhatsapp/>
-                            <BtnLlamar text="Llamar ahora 952693693"/>
+                            <BtnCallMe text="Llamar ahora 952693693"/>
                         </div>
                         <div className='flex items-center bg-marron2 hover:bg-marron py-2 px-2'>
                             <FaWhatsapp/>
-                            <button onClick={()=>setFormulario(!formulario) } >
+                            <button onClick={()=>setForm(!form) } >
                                 Mensajear ahora
                             </button>
                         </div>
                     </div>
-                    <form className={`${formulario ? '': 'hidden'} duration-500 w-[90%] mx-auto`}>
+                    <form className={`${form ? '': 'hidden'} duration-500 w-[90%] mx-auto`}>
                         <div className='grid grid-cols-2 gap-3'>
                             <div className='col-span-1'>
                                 <label className='block' htmlFor="name">Nombre <span>(requerido)</span></label>

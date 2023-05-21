@@ -6,21 +6,21 @@ import dibujo4 from '../assets/img/dibujo4.jpg'
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 export const Slider = () => {
-  let dibujos = [dibujo1,dibujo2,dibujo3,dibujo4]
+  let picture = [dibujo1,dibujo2,dibujo3,dibujo4]
   const [item, setItem] = useState(3)
 
 
-  const anterior = () => {
+  const previous = () => {
     let newItem= item
     if(newItem === 0){
-        newItem = dibujos.length-1 
+        newItem = picture.length-1 
         setItem(newItem)
     }else {
         newItem= item - 1
         setItem(newItem)
     }
   }
-  const siguiente = () => {
+  const next = () => {
     let newItem = item
     if(newItem===3){
         setItem(0)
@@ -34,10 +34,10 @@ export const Slider = () => {
   return (
     <>
             <div className=' h-96 w-full m-auto flex max-w-[1500px] justify-center items-center  relative'>
-                <div className="duration-500 h-full w-3/4  lg:w-2/4 bg-cover bg-center" style={{backgroundImage:`url(${dibujos[item]})`}}>
+                <div className="duration-500 h-full w-3/4  lg:w-2/4 bg-cover bg-center" style={{backgroundImage:`url(${picture[item]})`}}>
                 </div>
-                <FaAngleLeft onClick={anterior} className="cursor-pointer flex-none text-marron font-bold stroke-2 hover:text-marron2 w-8 h-16 absolute  top-1/2 -translate-x-0 -translate-y-[50%] left-1" />
-                <FaAngleRight onClick={siguiente} className="cursor-pointer flex-none text-marron font-bold stroke-2 hover:text-marron2 w-8 h-16 absolute  top-1/2 -translate-y-[50%] right-1"/>
+                <FaAngleLeft onClick={previous} className="cursor-pointer flex-none text-marron font-bold stroke-2 hover:text-marron2 w-8 h-16 absolute  top-1/2 -translate-x-0 -translate-y-[50%] left-1" />
+                <FaAngleRight onClick={next} className="cursor-pointer flex-none text-marron font-bold stroke-2 hover:text-marron2 w-8 h-16 absolute  top-1/2 -translate-y-[50%] right-1"/>
                 
             </div>
     </>

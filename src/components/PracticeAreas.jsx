@@ -1,5 +1,5 @@
 
-export const DerechoCivil = () => {
+export const PracticeAreas = () => {
   return (
     <>
         <div className="text-center mt-7">

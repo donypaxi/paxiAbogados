@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { HiOutlineTrash,HiOutlinePencil } from "react-icons/hi";
 import { VentanaEditar } from "../componentsAdministrable/VentanaEditar";
-import { verVentana } from "../store/slices/clientes/clientesSlice";
+import { updateCliente, verVentana } from "../store/slices/clientes/clientesSlice";
 
 export const TableLayout = () => {
     
@@ -9,7 +9,9 @@ export const TableLayout = () => {
     const mostrarVentana = useSelector((state)=> state.clientes.ventana)
     const dispatch =useDispatch()
     const btnEditar = (id) => {
+        dispatch(updateCliente(id))
         dispatch(verVentana(true))
+
     }
     const btnEliminar = (id) => {
         console.log(id)

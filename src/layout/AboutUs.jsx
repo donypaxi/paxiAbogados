@@ -1,6 +1,6 @@
 import dibujo2 from "../assets/img/dibujo2.jpg"
 import paxi1 from  '../assets/img/paxi1.jpg'
-export const Nosotros = () => {
+export const AboutUs = () => {
   return (
     <>
         <img src={dibujo2} className="w-full"  alt="dibujo 2 abogados" />
