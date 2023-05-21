@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { HiOutlineTrash,HiOutlinePencil } from "react-icons/hi";
 import { EditModal } from "./EditModal";
-import { updateCliente, editModal } from "../store/slices/clientes/clientesSlice";
+import { deleteClient, editModal, foundItem } from "../store/slices/clientes/clientesSlice";
 
 export const TableLayout = () => {
     
@@ -10,13 +10,12 @@ export const TableLayout = () => {
     const dispatch =useDispatch()
     const btnEditar = (id) => {
         dispatch(editModal(true))
-        dispatch(updateCliente(id))
+        dispatch(foundItem(id))
 
     }
     const btnEliminar = (id) => {
-        console.log(id)
-    }
-    
+        dispatch(deleteClient(id))
+    }    
     
   return (
     <>

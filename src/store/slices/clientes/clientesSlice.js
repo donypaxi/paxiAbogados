@@ -12,8 +12,6 @@ export const clientesSlice = createSlice({
     },
     reducers: {
         filter: (state, action ) => {
-            // console.log(action.payload)
-            // const {expediente,cliente,proceso} = action.payload
             const resultado = filterClient(state.clientes,action.payload) 
             state.mostrar = resultado
         },
@@ -24,15 +22,26 @@ export const clientesSlice = createSlice({
         editModal:(state,action)=>{
             state.modal= action.payload
         },
-        updateCliente:(state,action) => {
-            const user = action.payload
-            const buscarItem = state.clientes.findIndex(cliente=>cliente.id === user)
-            
-            console.log(buscarItem)
-            // state.clientes.splice(user,1)
+        foundItem:(state,action) => {
+            const item = state.clientes.find((cliente) => cliente.id === action.payload )
+            state.itemEditar = item
+
+        },
+        saveClient:(state,action) => {
+            const {expediente,cliente,proceso} = action.payload
+            const item = state.clientes.findIndex(cliente=>cliente.id === state.itemEditar.id)
+            state.clientes[item].expediente = expediente
+            state.clientes[item].cliente = cliente
+            state.clientes[item].proceso = proceso
+            state.mostrar = state.clientes
+        },
+        deleteClient:(state,action) => {
+            const index = state.clientes.findIndex(cliente =>cliente.id === action.payload)
+            state.clientes.splice(index,1)
+            state.mostrar = state.clientes
         }
         
 
     }
 });
-export const { filter, addClient,editModal,updateCliente } = clientesSlice.actions;   
+export const { filter, addClient,editModal,foundItem,saveClient,deleteClient } = clientesSlice.actions;   
