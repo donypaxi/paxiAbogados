@@ -13,11 +13,13 @@ export const NewProcessLayout = () => {
     materia:''
   }
 
+  const date = new Date(Date.now());
+  const today = date.toLocaleDateString()
   const [id, setId] = useState('')
   const [expediente, setExpediente] = useState('')
   const [cliente, setCliente] = useState('')
   const [proceso, setProceso] = useState('')
-  const [fecha, setFecha] = useState('')
+  const [fecha, setFecha] = useState(today)
   const [materia, setMateria] = useState('')
   const [alerta, setAlerta] = useState(false)
 
